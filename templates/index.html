@@ -11,8 +11,8 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
-	<!-- bxSlider CSS file -->
-	<link href="{{ url_for('static', filename='assets/css/jquery.bxslider.css')}}" rel="stylesheet" />
+	
+	
 	{{mymap.js}}
 </head>
 <body class="landing">
@@ -187,32 +187,28 @@
 
 
 
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 
-				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Gamer's Grub</li>
-			</ul>
-		</footer>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Gamer's Grub</li>
+					</ul>
+				</footer>
 
-	</div>
+			</div>
 
-	<!-- Scripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
-	<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js')}}"></script>
-	<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
-	<script src="{{ url_for('static', filename='assets/js/skel.min.js')}}"></script>
-	<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
-	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+			<!-- Scripts -->
+			<script   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="   crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
 
-</body>
-</html>
+		</body>
+		</html>
