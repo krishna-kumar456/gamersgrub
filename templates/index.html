@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Gamer's Grub</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
+	<!-- bxSlider CSS file -->
+	<link href="{{ url_for('static', filename='assets/css/jquery.bxslider.css')}}" rel="stylesheet" />
+	{{mymap.js}}
+</head>
+<body class="landing">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Gamer's Grub</a></h1>
+						<!--
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					-->
+				</header>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="inner">
+						<h2>Gamer's Grub</h2>
+						<p>Find Gaming Parlor's<br />
+							
+							near you.</p>
+							<!--
+							<ul class="actions">
+								<li><a href="#" class="button special">Activate</a></li>
+							</ul>
+						-->
+					</div>
+					<a href="#one" class="more scrolly">Learn More</a>
+				</section>
+
+				<!-- One -->
+				<section id="one" class="wrapper style1 special">
+					<div class="inner">
+						<header class="major">
+							<h2>What is Gamer's Grub?<br />
+							</h2>
+							<p>We intend to help Gamer's find a place to experience their true<br />
+								gaming nirvana as easily as gamingly possible.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gamepad major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-map major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-heart major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+
+
+
+
+
+					<section id="jumbo">
+						<div class="w3-content w3-section">
+							<img class="mySlides" src="https://iqglobal.intel.com/files/2015/01/IEM_2.jpg" height="500px" width="100%">
+							<img class="mySlides" src="http://ronakbhatia.com/wp-content/uploads/2015/12/gamers-socialise.jpg" height="500px" width="100%" >
+							<img class="mySlides" src="http://blog.holidaydiscountcentre.co.uk/wp-content/uploads/2016/03/16625673883_0930e6594c_k.jpg" height="500px" width="100%">
+						</div>
+
+						<script>
+							var myIndex = 0;
+							carousel();
+
+							function carousel() {
+								var i;
+								var x = document.getElementsByClassName("mySlides");
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";  
+								}
+								myIndex++;
+								if (myIndex > x.length) {myIndex = 1}    
+									x[myIndex-1].style.display = "block";  
+								setTimeout(carousel, 5000); 
+							}
+						</script>
+
+					</section>
+					<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="map">
+
+								{{mymap.html}}
+
+							</div>
+							<div class="content" align="left">
+								<center>
+									<h3>Enter location 
+									</h3>
+
+									<form action="#">
+										<input type="text" size="50" name="search"><br/>
+
+										<input type="submit" class="special" value="Submit">
+									</form>
+									<center>
+									</div>
+								</section>
+						<!--
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Augue eleifend aliquet<br />
+								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+					-->
+				</section>
+
+				<!-- Three -->
+				<!--
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Arcu accumsan</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Ac Augue Eget</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Mus Scelerisque</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-headphones">
+									<h3>Mauris Imperdiet</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart-o">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+				-->
+				
+
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+
+				<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Gamer's Grub</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='assets/js/skel.min.js')}}"></script>
+	<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+
+</body>
+</html>
