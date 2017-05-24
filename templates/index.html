@@ -59,75 +59,30 @@
 					<a href="#one" class="more scrolly">Learn More</a>
 				</section>
 
-				<!-- One -->
-				<section id="one" class="wrapper style1 special">
-					<div class="inner">
-						<header class="major">
-							<h2>What is Gamer's Grub?<br />
-							</h2>
-							<p>We intend to help Gamer's find a place to experience their true<br />
-								gaming nirvana as easily as gamingly possible.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gamepad major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-map major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-heart major style3"><span class="label">Dolor</span></span></li>
-							</ul>
+
+				<section id="two" class="wrapper alt style2">
+					<section class="spotlight">
+						<div class="map">
+
+							{{mymap.html}}
+
 						</div>
-					</section>
+						<div class="content" align="left">
+							<center>
+								<h3>Choose location 
+								</h3>
 
+								<form action="" class="form-inline" method="Post">
 
+									<input type="text" size="50" name="search"><br/>
 
-
-
-
-					<section id="jumbo">
-						<div class="w3-content w3-section">
-							<img class="mySlides" src="https://iqglobal.intel.com/files/2015/01/IEM_2.jpg" height="500px" width="100%">
-							<img class="mySlides" src="http://ronakbhatia.com/wp-content/uploads/2015/12/gamers-socialise.jpg" height="500px" width="100%" >
-							<img class="mySlides" src="http://blog.holidaydiscountcentre.co.uk/wp-content/uploads/2016/03/16625673883_0930e6594c_k.jpg" height="500px" width="100%">
-						</div>
-
-						<script>
-							var myIndex = 0;
-							carousel();
-
-							function carousel() {
-								var i;
-								var x = document.getElementsByClassName("mySlides");
-								for (i = 0; i < x.length; i++) {
-									x[i].style.display = "none";  
-								}
-								myIndex++;
-								if (myIndex > x.length) {myIndex = 1}    
-									x[myIndex-1].style.display = "block";  
-								setTimeout(carousel, 5000); 
-							}
-						</script>
-
-					</section>
-					<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="map">
-
-								{{mymap.html}}
-
-							</div>
-							<div class="content" align="left">
+									<input type="submit" class="special" value="Submit">
+								</form>
 								<center>
-									<h3>Enter location 
-									</h3>
+								</div>
+							</section>
 
-									<form action="" class="form-inline" method="Post">
-										
-										<input type="text" size="50" name="search"><br/>
 
-										<input type="submit" class="special" value="Submit">
-									</form>
-									<center>
-									</div>
-								</section>
 						<!--
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
@@ -146,28 +101,81 @@
 					-->
 				</section>
 
-				<!-- Three -->
-				<!--
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+				<section id="jumbo" class="wrapper style4">
+				</section>
+
+				<!-- One -->
+				<section id="one" class="wrapper style1 special">
+					<div class="inner">
+						<header class="major">
+							<h2>What is Gamer's Grub?<br />
+							</h2>
+							<p>We intend to help Gamer's find a place to experience their true<br />
+								gaming nirvana as easily as gamingly possible.</p>
 							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
+							<ul class="icons major">
+								<li><span class="icon fa-gamepad major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-map major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-heart major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+
+					
+
+					<section id="jumbo" class="wrapper style4">
+								<!--
+									<div class="w3-content w3-section">
+										<img class="mySlides" src="https://iqglobal.intel.com/files/2015/01/IEM_2.jpg" height="500px" width="100%">
+										<img class="mySlides" src="http://ronakbhatia.com/wp-content/uploads/2015/12/gamers-socialise.jpg" height="500px" width="100%" >
+										<img class="mySlides" src="http://blog.holidaydiscountcentre.co.uk/wp-content/uploads/2016/03/16625673883_0930e6594c_k.jpg" height="500px" width="100%">
+									</div>
+								-->
+								<script>
+									var myIndex = 0;
+									carousel();
+
+									function carousel() {
+										var i;
+										var x = document.getElementsByClassName("mySlides");
+										for (i = 0; i < x.length; i++) {
+											x[i].style.display = "none";  
+										}
+										myIndex++;
+										if (myIndex > x.length) {myIndex = 1}    
+											x[myIndex-1].style.display = "block";  
+										setTimeout(carousel, 5000); 
+									}
+								</script>
+
+							</section>
+
+
+
+
+							<section id="three" class="wrapper style3 special">
+								<div class="inner">
+									<header class="major">
+										<h2>Accumsan mus tortor nunc aliquet</h2>
+										<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+											fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+										</header>
+										<ul class="features">
+											<li class="icon fa-paper-plane-o">
+												<h3>Arcu accumsan</h3>
+												<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+											</li>
+											<li class="icon fa-laptop">
+												<h3>Ac Augue Eget</h3>
+												<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+											</li>
+								<!--
 								<li class="icon fa-code">
 									<h3>Mus Scelerisque</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
+								
 								<li class="icon fa-headphones">
 									<h3>Mauris Imperdiet</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
@@ -180,10 +188,11 @@
 									<h3>Tortor Ut</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-							</ul>
-						</div>
-					</section>
-				-->
+							-->
+						</ul>
+					</div>
+				</section>
+				
 				
 
 
