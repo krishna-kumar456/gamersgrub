@@ -1,0 +1,31 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+{{ super() }}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <p>
+                <a class="btn btn-primary" href="/"><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
+            </p>
+            <h1>Gamer's Grub Admin Panel</h1>
+            
+            {% if not current_user.is_authenticated %}
+            <p>
+                Please enter your admin credentials to login.
+            </p>
+            <a class="btn btn-primary" href="{{ url_for('security.login') }}">login</a> <a class="btn btn-default" href="{{ url_for('security.register') }}">register</a>
+
+            {% else %}
+            <p> Welcome 
+                
+                {{ current_user.email }}
+                
+
+               !
+            </p>
+
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endblock body %}

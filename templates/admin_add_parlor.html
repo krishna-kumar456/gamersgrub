@@ -1,0 +1,58 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+{{ super() }}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <p>
+                <a class="btn btn-primary" href="/"><i class="glyphicon glyphicon-chevron-left"></i> Back</a>
+            </p>
+            <h1>Gamer's Grub Admin Panel</h1>
+            
+            {% if not current_user.is_authenticated %}
+            <p>
+                Please enter your admin credentials to login.
+            </p>
+            <a class="btn btn-primary" href="{{ url_for('security.login') }}">login</a> <a class="btn btn-default" href="{{ url_for('security.register') }}">register</a>
+
+            {% else %}
+
+            <p> Current Marker's </p>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Icon</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Text Color</th>
+                    <th>Text Content</th>
+                </tr>
+            </thead>
+            <form id="map-form" method="Post">
+                <tbody>
+                    <tr>                   
+                        <td><input type="text" class="form-control" name="icon" id="icon"></td>
+                        <td><input type="text" class="form-control" name="lat" id="lat"></td>
+                        <td><input type="text" class="form-control" name="long" id="long"></td>
+                        <td><input type="text" class="form-control" name="textcolor" id="textcolor"></td>
+                        <td><input type="text" class="form-control" name="textcontent" id="textcontent"></td>
+                    </tr>
+                    
+                    <!--<button type="submit" class="btn btn-primary">Woot</button> -->
+                </tbody>
+                <input class="btn btn-primary" type="submit" value="Search">
+
+            </form>
+
+
+
+        </table>
+        {% endif %}
+
+
+
+    </div>
+</div>
+</div>
+{% endblock body %}
