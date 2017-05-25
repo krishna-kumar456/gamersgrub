@@ -46,6 +46,8 @@ class Image(db.Model):
 
 
 class Markers(db.Model):
+    __tablename__ = 'markers'
+
     id = db.Column(db.Integer, primary_key=True)
     icon = db.Column(db.String(255))
     latitude = db.Column(db.Numeric(20,18))

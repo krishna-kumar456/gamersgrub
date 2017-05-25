@@ -26,6 +26,7 @@ app.config.from_object(os.environ['APP_SETTINGS'])
 mail = Mail(app)
 
 db = SQLAlchemy(app)
+db.create_all()
 
 GoogleMaps(app, key="AIzaSyC-guaMVPHp2e3QMOq_HLS7pZ1v12hPZRM")
 
@@ -76,11 +77,7 @@ class MapUtil:
                 return map_markers
 
 
-m = MapUtil()
-marker_list = m.generate_dictionary()
 
-for item in marker_list:
-        print(item)
 
 # Set "homepage" to index.html
 
