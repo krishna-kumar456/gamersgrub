@@ -33,7 +33,8 @@ GoogleMaps(app, key="AIzaSyC-guaMVPHp2e3QMOq_HLS7pZ1v12hPZRM")
 geolocator = GoogleV3()
 map_markers = []
 
-from models import Result, User, Role, Markers
+
+from models import Result, User, Role, Markers, Image
 from views import MyModelView, UserView
 
 
@@ -76,8 +77,7 @@ class MapUtil:
 
                 return map_markers
 
-
-
+      
 
 # Set "homepage" to index.html
 
@@ -86,6 +86,8 @@ class MapUtil:
 def index():
                 m = MapUtil()
                 marker_list = m.generate_dictionary()
+                
+                
                 if request.method == 'POST':
                         try:
                                 search_text = request.form['search']
@@ -134,6 +136,7 @@ admin.add_view(MyModelView(User, db.session))
 # admin.add_view(FileView(File, db.session))
 # admin.add_view(ImageView(Image, db.session))
 admin.add_view(UserView(Markers, db.session, name='Marker'))
+
 
 
 @app.route('/admin')

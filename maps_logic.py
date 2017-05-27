@@ -1,6 +1,6 @@
 from geopy.geocoders import GoogleV3
 from collections import OrderedDict
-import app
+
 geolocator = GoogleV3()
 map_markers = []
 
